@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/seconds"
+            android:textSize="40sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="7"
+            android:layout_gravity="left"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:id="@+id/secondsUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="seconds"
+            android:textSize="40sp"
+            android:layout_weight="3"
+            android:layout_gravity="left"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/hours"
+            android:textSize="40sp"
+            android:editable="false"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="7"
+            android:layout_gravity="left"
+            />
+
+        <TextView
+            android:id="@+id/hoursUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="hours"
+            android:textSize="40sp"
+            android:layout_weight="3"
+            android:layout_gravity="left"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input"
+            android:textSize="40sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="7"
+            android:layout_gravity="left"
+            android:inputType="textCapCharacters"
+            />
+
+        <TextView
+            android:id="@+id/inputText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="input"
+            android:textSize="40sp"
+            android:layout_weight="3"
+            android:layout_gravity="left"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/inputRgroup"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:id="@+id/decimal"
+                android:layout_weight="1"
+                android:text="decimal"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:id="@+id/binary"
+                android:layout_weight="1"
+                android:text="binary"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:id="@+id/octonary"
+                android:layout_weight="1"
+                android:text="octonary"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:id="@+id/hex"
+                android:layout_weight="1"
+                android:text="hex"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/output"
+            android:textSize="40sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="7"
+            android:layout_gravity="left"
+            android:editable="false"
+            />
+
+        <TextView
+            android:id="@+id/outputText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="output"
+            android:textSize="40sp"
+            android:layout_weight="3"
+            android:layout_gravity="left"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/outputRgroup"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:id="@+id/decimal1"
+                android:layout_weight="1"
+                android:text="decimal"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:id="@+id/binary1"
+                android:layout_weight="1"
+                android:text="binary"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:id="@+id/octonary1"
+                android:layout_weight="1"
+                android:text="octonary"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:id="@+id/hex1"
+                android:layout_weight="1"
+                android:text="hex"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

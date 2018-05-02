@@ -8,6 +8,7 @@
         android:id="@+id/showpan4"
         android:layout_alignParentLeft="true"
         android:textSize="40sp"
+        android:editable="false"
         app:layout_widthPercent="100%"
         app:layout_heightPercent="10%"
         />
@@ -16,6 +17,7 @@
         android:id="@+id/showpan3"
         android:layout_below="@id/showpan4"
         android:textSize="40sp"
+        android:editable="false"
         app:layout_widthPercent="100%"
         app:layout_heightPercent="10%"
         />
@@ -23,6 +25,7 @@
     <EditText
         android:id="@+id/showpan2"
         android:layout_below="@id/showpan3"
+        android:editable="false"
         android:textSize="40sp"
         app:layout_widthPercent="100%"
         app:layout_heightPercent="10%"
@@ -33,10 +36,11 @@
         android:layout_below="@+id/showpan2"
         android:textSize="30sp"
         android:text="0"
+        android:editable="false"
+        android:inputType=""
         android:textAlignment="textEnd"
         app:layout_heightPercent="10%"
         app:layout_widthPercent="100%" />
-
 
     <Button
         android:id="@+id/leftBracket"
@@ -202,7 +206,6 @@
         app:layout_heightPercent="10%"
         />
 
-
     <Button
         android:id="@+id/one"
         android:text="1"
@@ -270,9 +273,6 @@
         app:layout_widthPercent="25%"
         app:layout_heightPercent="10%"
         />
-
-
-
-
+    
 
 </android.support.percent.PercentRelativeLayout>
